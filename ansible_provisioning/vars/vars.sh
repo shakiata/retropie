@@ -8,19 +8,19 @@ source ansible_provisioning/wrapper-scripts/vault-auth.sh
 source ansible_provisioning/wrapper-scripts/ssh-certType-resolver.sh
 
 # ANSIBLE VARS
-ANSIBLE_SUDO_PASS=$(vault kv get -field=admin_pwd kv/admin_pass)
+ANSIBLE_SUDO_PASS=raspberry
 ANSIBLE_SSH_USER=pi
-SSH_PORT=2002
+SSH_PORT=22
 
 # INSTANCE IP's
-RETROPIE_IP=192.168.0.28
+RETROPIE_IP=10.10.69.38
 
 # List of pre-installed emulators aand optional packages in JSON format
-EMULATORS='[\"arcade\",\"atari7800\",\"gba\",\"gbc\",\"genesis\",\"mame-liberto\",\"megadrive\",\"ports\",\"snes\",\"psx\",\"n64\"]'
-OPT_PACKAGES='["steamlink","skyscraper","lr-prboom","darkplaces-quake","eduke32","ioquake3","kodi","lzdoom"]'
+EMULATORS='[\"arcade\",\"atari7800\",\"gba\",\"gbc\",\"genesis\",\"mame-liberto\",\"megadrive\",\"ports\",\"snes\",\"psx\",\"n64\",\"mastersystem\",\"neogeo\",\"nes\"]'
+OPT_PACKAGES='["steamlink","skyscraper","lr-prboom","darkplaces-quake","eduke32","ioquake3","kodi","lzdoom"]' 
 
 # OVERCLOCKING - ALL VALUES IN MHz (PROCEED AT OWN RISK)
 OVERCLOCK_RETROPIE=true
-OC_CPU_FREQ=1750 #default 800
-OC_CPU_OVERVOLT=600 #default 0
-OC_GPU_FREQ=740  #default 700
+OC_CPU_FREQ=2147 #default 800
+OC_CPU_OVERVOLT=6 #default 0
+OC_GPU_FREQ=700  #default 700
