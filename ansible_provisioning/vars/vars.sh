@@ -22,5 +22,5 @@ OPT_PACKAGES='["steamlink","skyscraper","lr-prboom","darkplaces-quake","eduke32"
 # OVERCLOCKING - ALL VALUES IN MHz (PROCEED AT OWN RISK)
 OVERCLOCK_RETROPIE=true
 OC_CPU_FREQ=2147 #default 800
-OC_CPU_OVERVOLT=6 #default 0
+OC_CPU_OVERVOLT=6 #default 0 should be single digit most of the time
 OC_GPU_FREQ=700  #default 700
